@@ -72,23 +72,24 @@ if (supplies >= 10) {
 
     cout << endl;
 
-    // Generate a random 3-digit pin
+    // Gabmling!!!!
+    std::srand(std::time(0));
     int pin = std::rand() % 900 + 100;
     do {
-        cout << "Enter the 3-digit pin: ";
+        cout << "Enter the 3-digit pin to win a GAZILLION DOLLARS!!!!";
         cin >> opt;
         if (opt != pin) {
             cout << "WRONG!!! Try again? (Y/N)" << endl;
             cin >> enter;
             if (tolower(enter) == 'n') {
-                cout << "L this is gonna stay locked" << endl;
+                cout << "ur broke lol but never give up on gambling!" << endl;
                 break;
             }
         }
     } while (opt != pin);
 
     if (opt == pin) {
-        cout << "The box has been unlocked." << endl;
+        cout << "you won a TRILLION GAZILLION!!!!" << endl;
     }
 
     return 0;
